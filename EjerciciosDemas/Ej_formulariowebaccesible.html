@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       fieldset{
+        width: 30vw;
+        margin: 6px 0;
+       }
+       label{
+        display: inline-block;
+        vertical-align: center;
+        margin: 0.3em;
+       }
+       input, label{
+        width: auto;
+       }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de formulario web Accesible AA</h1>
+    <form action="">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" name="Nombre" id="Nombre">
+    <br></br>
+    <label for="Apellidos">Apellidos:</label>
+    <input type="text" name="Apellidos" id="Apellidos">
+    <br></br>
+    <fieldset>
+    <legend>Sexo:</legend>
+    <input type="radio" name="Sexo" id="Hombre">Hombre
+    <input type="radio" name="Sexo"  id="Mujer">Mujer
+    </fieldset>
+    
+    <br></br>
+    <label for="Correo">Correo:</label>
+    <input type="text" name="" id="" placeholder="Desabilitado">
+    <br></br>
+    <input type="checkbox" name="aceptar"><label for="">Acepto las condiciones</label>
+    <br></br>
+    <button type="button">Enviar</button>
+</form>
+<br>
+<a href="javascript:history.back()" role="link" 
+aria-label="Enlace para volver a la pagina anterior">
+&lt; &lt; Volver</a>
+
+</body>
+</html>

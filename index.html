@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        nav {
+            background-color: #999999;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        section, aside {
+            background-color: #e0e0e0;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            width: 100%;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        video {
+            width: 100%;
+        }
+
+   
+        @media (max-width: 50px) {
+            nav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding: 10px;
+            }
+            main {
+                flex-direction: column;
+                padding: 10px;
+            }
+            section, aside {
+                margin: 5px 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header tabindex="0">
+        <h1>La vida del cocinero</h1>
+        <nav>
+            <a href="index.html" tabindex="2">Inicio</a>
+            <a href="logiin.html" tabindex="5">Formulario de registro</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 tabindex="6">Jesse Pinkman</h2>
+            <img src="img/Jesse_Pikman.png" alt="Jesse_Pikman">
+            <p>Jesse Bruce Pinkman es el compañero de Walter White en el tráfico de metanfetamina. 
+                En el instituto, Jesse era un consumidor, fabricante y traficante de poca monta de metanfetamina. 
+                Era un estudiante que prestaba poca atención a las clases de química de su profesor, el propio Walter. 
+                Años después, Jesse se dedica al tráfico de droga con el seudónimo "Cap'n Cook" y añade polvo de chili a su producto para caracterizarlo.
+            </p>
+        </section>
+        <section>
+            <h2 tabindex="7">Heisenberg</h2>
+            <img src="img/heisenberg.webp" alt="Heisenberg">
+            <p>"Heisenberg", es un químico y profesor de química de Albuquerque, Nuevo México que, 
+                tras ser diagnosticado con cáncer de pulmón inoperable, 
+                decide empezar a fabricar metanfetamina para poder mantener 
+                a su familia provista de cara al futuro.</p>
+        </section>
+        <section>
+            <h2 tabindex="8">Heisenberg es descubierto por Hank</h2>
+            <video id="video" src="video/walterwhitegg.mp4" controls muted>
+            </video>
+            <p>Walter en ese momento sintió el verdadero terror.
+            </p>
+        </section>
+        <aside tabindex="9">
+            <h3>Historias de más personajes:</h3>
+            <ul>
+                <li><a href="https://breakingbad.fandom.com/es/wiki/Jimmy_McGill" tabindex="10">Saul Goodman</a></li>
+                <li><a href="https://breakingbad.fandom.com/es/wiki/Mike_Ehrmantraut" tabindex="11">Mike Ehrmantraut</a></li>
+                <li><a href="https://breakingbad.fandom.com/es/wiki/Gustavo_Fring" tabindex="12">Gustavo Fring</a></li>
+            </ul>
+            <h3>Después de la serie:</h3>
+            <ul>
+                <li><a href="https://www.revistagq.com/noticias/articulo/que-paso-con-walter-white-al-final-de-breaking-bad" tabindex="13">Después de la serie ¿qué pasó?</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Better_Call_Saul#:~:text=Better%20Call%20Saul%20es%20una,vez%20una%20precuela%20y%20secuela." tabindex="14">¿Habrá Breaking Bad 2?</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer tabindex="15">
+        <ul>
+            <li><a href="#" tabindex="16">Contacto</a></li>
+            <li><a href="#" tabindex="17">Acerca de</a></li>
+            <p>Hecho por Jesús Sánchez Rodríguez</p>
+        </ul>
+    </footer>
+</body>
+</html>

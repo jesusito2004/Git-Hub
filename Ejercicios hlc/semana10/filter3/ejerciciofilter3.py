@@ -1,4 +1,3 @@
-
 '''
     Ejercicio de clase.
 
@@ -34,3 +33,5 @@ empleados_vip = [emp for emp in listaEmpleados if emp.get_salario() > 50000]
 # Mostrar los empleados VIP
 for ev in empleados_vip:
     print(ev)
+
+print("Jesús Sánchez Rodríguez")

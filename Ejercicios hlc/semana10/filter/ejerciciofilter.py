@@ -18,3 +18,4 @@ print(numero_par)  # Esto imprimirá [-24, 40, 70, 82, -96, 102]
 numero_par_pos = list(filter(lambda x: x % 2 == 0 and x > 0, lista_numerica))
 
 print(numero_par_pos)  # Esto imprimirá [40, 70, 82, 102]
+print("Jesús Sánchez Rodríguez")

@@ -13,6 +13,7 @@ pares_positivos = list(filter(lambda x: x % 2 == 0 and x > 0, num_aleatorios))
 
 print(num_aleatorios)
 print(pares_positivos)
+print("Jesús Sánchez Rodríguez")
 
 
 
